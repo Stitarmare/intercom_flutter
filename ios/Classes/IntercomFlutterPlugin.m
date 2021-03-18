@@ -93,6 +93,16 @@ id unread;
         [Intercom presentHelpCenter];
         result(@"Presented help center");
     }
+    else if([@"displayArticle" isEqualToString:call.method]) {
+        NSString *articleId = call.arguments[@"articleId"];
+        [Intercom presentArticle:articleId];
+        result(@"Presented article");
+    }
+    else if([@"displayCarousel" isEqualToString:call.method]) {
+        NSString *carouselId = call.arguments[@"carouselId"];
+        [Intercom presentCarousel:carouselId];
+        result(@"Presented carousel");
+    }
     else if([@"updateUser" isEqualToString:call.method]) {
         [Intercom updateUser:[self getAttributes:call]];
         result(@"Updated user");

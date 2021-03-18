@@ -114,6 +114,16 @@ class IntercomFlutterPlugin : FlutterPlugin, MethodCallHandler, EventChannel.Str
         Intercom.client().displayHelpCenter()
         result.success("Launched")
       }
+      call.method == "displayArticle" -> {
+        val articleId = call.argument<String>("articleId")
+        Intercom.client().displayArticle(articleId ?: "")
+        result.success("Launched")
+      }
+      call.method == "displayCarousel" -> {
+        val carouselId = call.argument<String>("carouselId")
+        Intercom.client().displayCarousel(carouselId)
+        result.success("Launched")
+      }
       call.method == "setInAppMessagesVisibility" -> {
         val visibility = call.argument<String>("visibility")
         if(visibility != null) {

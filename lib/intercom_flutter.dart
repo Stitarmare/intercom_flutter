@@ -134,6 +134,14 @@ class Intercom {
     await _channel.invokeMethod('displayHelpCenter');
   }
 
+  static Future<void> displayArticle(String articleId) async {
+    await _channel.invokeMethod('displayArticle', {'articleId': articleId});
+  }
+
+  static Future<void> displayCarousel(String carouselId) async {
+    await _channel.invokeMethod('displayCarousel', {'carouselId': carouselId});
+  }
+
   static Future<void> logEvent(String name,
       [Map<String, dynamic>? metaData]) async {
     await _channel
