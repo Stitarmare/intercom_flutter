@@ -3,7 +3,7 @@ PODS:
   - Intercom (10.3.0)
   - intercom_flutter (2.4.0):
     - Flutter
-    - Intercom (~> 10.1)
+    - Intercom (~> 10.3.0)
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
@@ -22,7 +22,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Flutter: 434fef37c0980e73bb6479ef766c45957d4b510c
   Intercom: b697b5972ca0fad3412a13c67c6920eab301498b
-  intercom_flutter: 277511b0a382dfb4034b0b00586719898102101f
+  intercom_flutter: 232c9e74ae64aeeeee7bb60a4b1ccd86e69db119
 
 PODFILE CHECKSUM: fe0e1ee7f3d1f7d00b11b474b62dd62134535aea
 
